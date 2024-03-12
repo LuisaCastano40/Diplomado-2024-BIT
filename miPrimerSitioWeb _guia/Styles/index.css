@@ -1,0 +1,142 @@
+/* 1. Importamos las fuentes */
+@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+
+/* 2. Establecemos variables de css - paleta de colores */
+
+:root{
+    --color1: #CE79F2;
+    --color2: #714EDB;
+    --color3: #312E8C;
+    --color4: #F2B33D;
+    --color5: #BFA893;
+    --tipografia:'Zilla Slab', sans-serif;
+}
+
+/* 3. Condiciones iniciales (Opcional recomendado) */
+
+*{
+    /* Sin margen externo */
+    margin: 0;
+    /* Sin margen interno */
+    padding: 0;
+    /* Todos los elementos se ajusten correctamente a las dimensiones dadas */
+    box-sizing: border-box;
+}
+
+body{
+    /* Ancho del cuerpo del sitio web 100% (ocupa toda la pantalla) */
+    width: 100%;
+    /* Me oculta el scroll horizontal */
+    overflow-x: hidden;
+    /* establezco la tipografía en toda mi página web, en este caso usamos una variable de css */
+    font-family: var(--tipografia);
+}
+
+/* -------------------HEADER---------------- */
+header{
+    width: 100%;
+    height: 100%;
+    border: solid red;
+}
+
+.menuNavegacion {
+    border: solid green;
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuNavegacion img{
+    width: 100px;
+}
+
+.navegacion{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navegacion a{
+    font-size: 25px;
+    color: var(--color3);
+    text-decoration: none;
+}
+
+.navegacion a:hover{
+    color: var(--color4);
+}
+
+.banner img{
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+/* --------------------MAIN----------------- */
+main{
+    border: solid orangered;
+    width: 100%;
+}
+.titulo{
+    font-size: 50px;
+    color: var(--color1);
+    text-align: center;
+    margin: 50px;
+}
+
+.contenedorInformacion{
+    border: solid purple;
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.contenedorInformacion p{
+    font-size: 25px;
+    width: 50%;
+}
+.audiovisual{
+    width: 500px;
+    height: 250px;
+    object-fit: cover;
+}
+/* -------------------FOOTER---------------- */
+
+footer{
+    background-color: var(--color5);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    padding: 30px;
+}
+.lista{
+    list-style: none;
+}
+i{
+    font-size: 30px;
+    margin: 10px;
+    color: var(--color2);
+}
+
+.logoFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logoFooter a{
+    text-decoration: none;
+}
+.logoFooter a:hover{
+    color: var(--color2);
+}
+.logo{
+    width: 100px;
+}

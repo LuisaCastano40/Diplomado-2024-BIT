@@ -1,0 +1,69 @@
+<!-- LA ESTRUCTURA BÁSICA DE UN SITIO WEB -->
+<!-- Cómo crearlo rápido : ! o con html:5 -->
+<!-- En HTML siempre van a haber etiquetas de apertura y cierre -->
+<!-- como comentar más rápido - ctrl + } -->
+
+<!-- DOCTYPE hace referencia al archivo html en el que vamos a trabajar -->
+<!DOCTYPE html>
+
+<!-- Lang -> idioma en el cual yo voy a hacer mi sitio web  -->
+<html lang="es">
+  <!-- HEAD -> Es información de links y metadatos - relacionado con funcionamiento -->
+  <head>
+    <!-- meta son METADATOS -> Información que me ayuda para el funcionamiento de mi página web pero que no se ve -->
+    <meta charset="UTF-8" />
+
+    <!-- charset="UTF-8" -> nos permite usar caracteres especiales @, ´, ñ, $, & -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- name="viewport" permite que nuestro sitio web pueda ser visualizado en otros dispositivos-->
+
+    <!-- Link de los estilos de mi página -->
+    <!-- href -> es el que me vincula con mi página de estilos -->
+    <link rel="stylesheet" href="/Styles/index.css" />
+
+    <title>Educarte</title>
+    <!-- title al nombre que aparece en el navegador -->
+  </head>
+
+  <!-- BODY al cuerpo de nuestra página web -> lo que vemos -->
+  <body>
+    <!-- HEADER - es la etiqueta para el encabezado de nuestras páginas web
+    -menú de navegación
+    -Baner o Slider -->
+
+    <!-- ETIQUETAS SEMÁNTICAS -> ETIQUETAS QUE NOS DAN INFORMACIÓN DE LO QUE CONTIENEN -->
+    <header>
+      <!-- NAV - la etiqueta para los menú de navegación -->
+      <nav class="menuNavegacion">
+        <img src="/assets/logo.jpg" alt="" />
+      </nav>
+
+      <!-- SECTION se utiliza para separar secciones de contenido más general -->
+      <section class="baner">
+        <!-- IMG - Etiqueta para insertar imágenes 
+        src - source -> fuente o raíz (link de mi imagen)-->
+        <img src="/assets/baner.webp" alt="" />
+      </section>
+    </header>
+
+    <!-- MAIN  Etiqueta que se asocia al contenido del sitio web, puede tener las secciones, los artículos, las imágenes, los párrafos que se necesiten-->
+    <main>
+      <!-- class -> SELECTOR -->
+      <section class="informacion1"></section>
+
+      <section class="informacion2"></section>
+    </main>
+
+    <!-- FOOTER pie de página - información concreta que queremos recordarle al cliente - info de contacto y redes sociales -->
+    <footer>
+      <!-- ARTICLE es una etiqueta para contenido más concreto que tiene sentido por sí mismo -->
+      <article class="contacto"></article>
+
+      <article class="redesSociales"></article>
+
+      <article class="contenedorLogo"></article>
+    </footer>
+  </body>
+</html>
