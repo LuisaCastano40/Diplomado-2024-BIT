@@ -102,36 +102,36 @@
 ## Paso 4: Estructura de carpetas de nuestro proyecto
 <p>Deben estructurar su proyecto con la siguiente organización de carpetas</p>
 <br>
-trabajoFinal/
-├── node_modules/
-├── public/
-│   ├── styles/
-│   │   └── styles.css (todos sus archivos css)
-│   ├── scripts/
-│   │   └── script.js (todos sus archivos JavaScript)
-│   ├── assets/
-│   │   └── logo.png (todas sus imágenes, videos, contenido audio-visual)
-│   ├── index.html
-│   ├── pagina2.html (todas las páginas que tengan)
-│   ├── ingreso.html
-│   ├── admin.html
-│   └── registro.html
-├── src/
-│   ├── config/
-│   │   └── db.js
-│   ├── controllers/
-│   │   └── user.controller.js
-│   ├── models/
-│   │   └── user.model.js
-│   └── routes/
-│       └── user.routes.js
-├── app.js
-├── .gitignore
-├── .env
-├── package-lock.json
-├── package.json
-├── README.md
-└── test.http
+- trabajoFinal/
+- ├── node_modules/
+- ├── public/
+- │   ├── styles/
+- │   │   └── styles.css (todos sus archivos css)
+- │   ├── scripts/
+- │   │   └── script.js (todos sus archivos JavaScript)
+- │   ├── assets/
+- │   │   └── logo.png (todas sus imágenes, videos, contenido audio-visual)
+- │   ├── index.html
+- │   ├── pagina2.html (todas las páginas que tengan)
+- │   ├── ingreso.html
+- │   ├── admin.html
+- │   └── registro.html
+- ├── src/
+- │   ├── config/
+- │   │   └── db.js
+- │   ├── controllers/
+- │   │   └── user.controller.js
+- │   ├── models/
+- │   │   └── user.model.js
+- │   └── routes/
+- │       └── user.routes.js
+- ├── app.js
+- ├── .gitignore
+- ├── .env
+- ├── package-lock.json
+- ├── package.json
+- ├── README.md
+- └── test.http
 
 <br>
 
