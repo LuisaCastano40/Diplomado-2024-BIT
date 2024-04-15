@@ -1,0 +1,57 @@
+/* condicione siniciales en css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.logo{
+    width: 100px;
+}
+
+.miMenuNavehacion{
+    background-color: aqua;
+    font-size: 25px;
+}
+
+.miCarrusel{
+    padding: 20px;
+    width: 100%;
+
+    /* En css tenemos varias unidades de medida
+        px -> valores fijos -> no se recomienda para el responsive
+        % y vh o vw -> valores que se acoplan al tamaño de mi pantalla
+
+        vh -> viewport height -> alto de mi pantalla
+        vw -> viewport width -> ancho de pantalla
+    
+    */
+    height: 60vh;
+    /* 60vh -> 60% */
+
+    /* Nos ayuda a poner la imagen en el centro de la pantalla */
+    object-fit: cover;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.imagen{
+    border: 10px solid red;
+    width: 100vw;
+}
+
+
+/* MEDIAS QUERIES */
+
+@media screen and (min-width: 600px){
+
+    .imagen {
+        border: 10px solid blue;
+        width: 50vw;
+    }
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce | práctica BIT</title>
+
+  <!-- Los estílos de nuestra página -->
+  <link rel="stylesheet" href="./Styles/bootstrap.css">
+  <!-- Script de la páagina -->
+  <script defer src="./script.js"></script>
+
+  <!-- Links de estilos de bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Script de bootstrap -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <!-- Íconos de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+
+
+</head>
+
+<body class="overflow-x-hidden miBody">
+
+  <!-- TIPS PARA EL USO DE BOOTSTRAP -->
+  <!-- 
+        1. APRENDAMOS A MOVER EN LA DOCUMENTACIÓN 
+        2. utilizar las clases según nuestras necesidades
+        3. familiarizarse con las clases
+        4. las clases propias o puestas por nosotros sean en español
+    -->
+
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-COMMERCE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PRODUCTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-bag-heart"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Fin menú de navegación -->
+
+  <!-- Carrusel de imágenes -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner p-4 miCarrusel">
+      <div class="carousel-item active ">
+        <img src="./assets/banner1.jpg" class="d-block w-100" alt="baner1">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/banner2.jpg" class="d-block w-100" alt="baner2">
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/banner3.jpg" class="d-block w-100" alt="baner3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Fin carrusel de imágenes -->
+
+
+  <!-- Logos -->
+  <!-- <div class="container-fluid bg-secondary-subtle">
+    <div class="row text-center py-4">
+      <div class="col-sm-6 col-lg-3"><img class="logo" src="./assets/logos/logo1.png" alt="logo1"></div>
+      <div class="col-sm-6 col-lg-3"><img class="logo" src="./assets/logos/logo2.png" alt="logo1"></div>
+      <div class="col-sm-6 col-lg-3"><img class="logo" src="./assets/logos/logo3.png" alt="logo1"></div>
+      <div class="col-sm-6 col-lg-3"><img class="logo" src="./assets/logos/logo4.png" alt="logo1"></div>
+    </div>
+  </div> -->
+  <!-- Fin logos -->
+
+  <!-- Productos -->
+  <!-- <div class="container my-5">
+    <div class="row" id="productsContainer">
+
+      <div class="col  contenedorProducto">
+        <div class="card miTarjeta border-black text-center" style="width: 18rem;">
+          <h5 class="card-title text-uppercase">Card title</h5>
+          <img src="./assets/images/img1.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fs-1">$20.000</p>
+            <a href="#" class="btn btn-dark">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col contenedorProducto">
+        <div class="card miTarjeta border-black text-center" style="width: 18rem;">
+          <h5 class="card-title text-uppercase">Card title</h5>
+          <img src="./assets/images/img2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fs-1">$20.000</p>
+            <a href="#" class="btn btn-dark">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col contenedorProducto">
+        <div class="card miTarjeta border-black text-center" style="width: 18rem;">
+          <h5 class="card-title text-uppercase">Card title</h5>
+          <img src="./assets/images/img3.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fs-1">$20.000</p>
+            <a href="#" class="btn btn-dark">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col contenedorProducto">
+        <div class="card miTarjeta border-black text-center" style="width: 18rem;">
+          <h5 class="card-title text-uppercase">Card title</h5>
+          <img src="./assets/images/img4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fs-1">$20.000</p>
+            <a href="#" class="btn btn-dark">Añadir al carrito</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div> -->
+  <!-- Fin productos -->
+
+
+</body>
+
+</html>

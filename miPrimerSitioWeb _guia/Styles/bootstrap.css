@@ -1,0 +1,8 @@
+
+.miCarrusel{    
+    width: 100vh;    
+    max-height: 60vh;    
+    display: flex;    
+    align-items: center;  
+    object-fit: cover;  
+}

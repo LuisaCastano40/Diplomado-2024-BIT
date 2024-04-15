@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos básicos js</title>
+    
+    <!-- archivo de js de la clase pasada -->
+    <script src="scripts/conceptosBasicos.js" defer></script>
+    <!-- archivo de js de la clase de hoy 10/04/2024 -->
+    <!-- type="text/JavaScript" -> RECOMENDADO USAR -->
+    <script src="scripts/practicaConceptos.js" defer type="text/JavaScript"></script>
+    
+</head>
+<body> 
+
+
+    <header>
+        <h1>Conceptos básicos</h1>
+        <h2>De JavaScript</h2>
+    </header>
+
+    <main>
+
+        <p>Implementar los conceptos de sitios web dinámicos con javaScript:</p>
+
+        <ol>
+            <li> MANEJO DEL DOM</li>
+            <li> CONDICIONALES</li>
+            <li> CICLOS</li>
+        </ol>
+
+
+        <!-- sección para el primer ejercicio -> Ejercicio de DOM Y CONDICIONALES -->
+        <section>
+            <h3>Ejercicio de DOM y Condicionales</h3>
+            <!-- Qué es lo que quiero hacer con este ejercicio -->
+            <p> Preguntar al usuario su edad y mostrar en pantalla si es mayor o menor de edad</p>
+
+            <div class="contenedor">
+                <!-- input -> entrada -> que es algo que me suministra el usuario ej: número, un nombre, correo, una contraseña, etc -->
+                <!-- label -> es una etiqueta para el input -->
+                <label>¿Cuál es tu edad?</label> 
+                <input type="number" id="edadInput" placeholder="Ingrese aquí su edad">
+
+                <!-- para darle duncionalidad a ese botón, debo llamar un EVENTO onclick -> darle click al botón -->
+                <!-- EVENTO ES UNA ACCIÓN DEL USUARIO -->
+                <button onclick="verificarEdad()">Verificar edad</button>
+
+                <!-- el id -> es un IDENTIFICADOR ÚNICO -> que podamos llevar un elemento de html a nuestro JS -->
+                <span id="mensaje"></span>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados -> creado por Luisa Castaño</p>
+    </footer>
+
+    
+
+
+
+
+    <!-- La etiqueta SCRIPT -> nos sirve para vincular nuestro archivo de JS en nuestro html
+        1. inmediatamente antes del cierre de body
+        2. utilizar el script en la etiqueta HEAD
+    -->
+    <!-- <script src="/conceptosBasicos.js"></script> -->
+</body>
+</html>
