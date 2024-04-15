@@ -32,8 +32,7 @@
 
 ## Paso 1: Crear repositorio Trabajo Final
 <p>Utilizaremos el conocimiento de lo aprendido en clases anteriores, crearán un repositorio en su perfil de GitHub llamado **Trabajo-Final**, y deben seguir el paso a paso para vincular el repositorio remoto en GitHub con su repositorio local (la carpeta en la que tienen su proyecto)</p>
-<br>
-<br>
+
 
 ### Material Recomendado 📚🎥
 
@@ -44,8 +43,7 @@
 
 ## Paso 2: Inicializar Proyecto con Node.js
 <p><b>Ya se descargó e instaló node.js, ahora haremos paso a paso la inicialización del proyecto<p>
-<br>
-<br>
+
 
 ### Paso a paso 📖
 
@@ -81,8 +79,6 @@
 
 ## Paso 3: Descargar dependencias y extensiones
 <p><b>Ahora, debemos descargar los elementos que permitirán que nuestro proyecto funcione adecuadamente</p>
-<br>
-<br>
 
 
 ### Paso a paso 📖
@@ -106,7 +102,7 @@
 ## Paso 4: Estructura de carpetas de nuestro proyecto
 <p>Deben estructurar su proyecto con la siguiente organización de carpetas</p>
 <br>
-    <p>trabajoFinal/
+    trabajoFinal/
     ├── node_modules/
     ├── public/
     │   ├── styles/
@@ -135,7 +131,7 @@
     ├── package-lock.json
     ├── package.json
     ├── README.md
-    └── test.http<p>
+    └── test.http
 <br>
 
 ### Material Recomendado 📚🎥
