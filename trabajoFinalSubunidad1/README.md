@@ -37,7 +37,7 @@
 ### Material Recomendado 📚🎥
 
 - [Clase de git y GitHub](https://www.youtube.com/watch?v=xIyOLgjVebo&list=PLpD_vYWjZt10P3jWpg2O_NfwnDiDEselo&index=9)🎥 
-- [Clase donde hacemos el paso a paso para entraga 4 (...Próximamente)](#) 🎥
+- [Clase donde hacemos el paso a paso para entraga 4](https://www.youtube.com/watch?v=YkL2VtfORX0&list=PLpD_vYWjZt10P3jWpg2O_NfwnDiDEselo&index=13) 🎥
 
 ---
 
@@ -49,37 +49,11 @@
 
 1. **Abrimos la consola en Visual Studio Code**
 2. **Escribimos el comando:**
-   - npm init
-   - nombre del proyecto (dejamos el sugerido) - click Enter.
-   - versión (dejamos el sugerido) - click Enter.
-   - descripción (escribimos breve descripción del proyecto) - click Enter.
-   - punto de entrada (escribir app.js) - click Enter
-   - comando de prueba (no escribimos nada) - click Enter
-   - repositorio de git (no escribimos nada) - click Enter
-   - palabras clave (no escribimos nada) - click Enter
-   - autor (cada uno escribe su nombre) - click Enter
-   - licencia (no escribimos nada) - click Enter
-   - Escribir **yes** para finalizar la inicialización
-
+   - npm init -y
 3. **Verificar la creación de un archivo llamado package.json**
-4. **Hacer las modificaciones necesarias en el package.json**
-   - Agregar:<br>
-            "type": "module",
-            "scripts": {
-            "dev": "nodemon app.js",
-            "start": "node app.js",
-            },
-
-
-### Material Recomendado 📚🎥
-
-- [Clase donde hacemos el paso a paso para entraga 4 (...Próximamente)](#) 🎥
-
----
 
 ## Paso 3: Descargar dependencias y extensiones
 <p><b>Ahora, debemos descargar los elementos que permitirán que nuestro proyecto funcione adecuadamente</p>
-
 
 ### Paso a paso 📖
 
@@ -93,10 +67,34 @@
    - **Escribir en consola lo siguiente para instalarlo**
    - npm i express mongoose nodemon dotenv
 
+3. **Hacer las modificaciones necesarias en el package.json**
+   - Debe quedar algo como esto:
+         - {
+         -   "name": "trabajofinalsubunidad1",
+         -   "version": "1.0.0",
+         -   "description": "Entrega final",
+         -   "main": "app.js",
+         -   "type": "module",
+         -   "scripts": {
+         -      "start": "node app.js",
+         -      "dev": "nodemon app.js"
+         -   },
+         -   "author": "Luisa castaño",
+         -   "license": "ISC",
+         -   "dependencies": {
+         -      "dotenv": "^16.4.5",
+         -      "express": "^4.19.2",
+         -      "mongoose": "^8.3.1",
+         -      "nodemon": "^3.1.0"
+         -   }
+         -   }
+
+
 
 ### Material Recomendado 📚🎥
 
 - [Clase donde hacemos el paso a paso para entraga 4 (...Próximamente)](#) 🎥
+
 ---
 
 ## Paso 4: Estructura de carpetas de nuestro proyecto
@@ -135,6 +133,13 @@
    - └── test.http
 
 <br>
+
+### Ejemplo visual
+
+| ![Estructura general del proyecto](./readmeAssets/Estructura%20carpetas.PNG) | ![Ejemplo contenido carpeta public](./readmeAssets/carpetaPublic.PNG) | ![Contenido carpeta src](./readmeAssets/carpetaSrc.PNG) |
+|:------------------------------:|:------------------------------:|:------------------------------:|
+| Son los archivos y carpetas más externas que DEBEN estar dentro de su proyecto     | Ejemplo del contenido front de su proyecto, todos los html, css y scripts junto con las imágenes deben estar acá    | Son las carpetas y archivos qeu deben estar si o sí dentro de la carpeta src, que es donde se pone el código del backend    |
+
 
 ### Material Recomendado 📚🎥
 
