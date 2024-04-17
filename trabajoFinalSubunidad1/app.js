@@ -4,11 +4,19 @@ import express from 'express';
 // Importamos path para usar ciertas utilidades a la hora de trabajar con rutas
 import path from 'path';
 
+import conexionMongo from './src/config/db.js';
+
 //configuramos express como servidor
 const app = express();
 // puerto que vamos a usar para escuchar las solicitudes
 const port = 3000; 
 
+// configuramos el uso de dotenv -> para usar variables de estado
+import dotenv from "dotenv";
+dotenv.config();
+
+//  ejecutamos la función de conexión de nuestra base de datos
+conexionMongo();
 
 // 2. ESTABLECEMOS LAS RUTAS PARA NUESTRO FRONT
 
