@@ -68,26 +68,27 @@
    - npm i express mongoose nodemon dotenv
 
 3. **Hacer las modificaciones necesarias en el package.json**
+
    - Debe quedar algo como esto:
-         - {
-         -   "name": "trabajofinalsubunidad1",
-         -   "version": "1.0.0",
-         -   "description": "Entrega final",
-         -   "main": "app.js",
-         -   "type": "module",
-         -   "scripts": {
-         -      "start": "node app.js",
-         -      "dev": "nodemon app.js"
-         -   },
-         -   "author": "Luisa castaño",
-         -   "license": "ISC",
-         -   "dependencies": {
-         -      "dotenv": "^16.4.5",
-         -      "express": "^4.19.2",
-         -      "mongoose": "^8.3.1",
-         -      "nodemon": "^3.1.0"
-         -   }
-         -   }
+   - {
+   -   "name": "trabajofinalsubunidad1",
+   -   "version": "1.0.0",
+   -   "description": "Entrega final",
+   -   "main": "app.js",
+   -   "type": "module",
+   -   "scripts": {
+   -      "start": "node app.js",
+   -      "dev": "nodemon app.js"
+   -   },
+   -   "author": "Luisa castaño",
+   -   "license": "ISC",
+   -   "dependencies": {
+   -      "dotenv": "^16.4.5",
+   -      "express": "^4.19.2",
+   -      "mongoose": "^8.3.1",
+   -      "nodemon": "^3.1.0"
+   -   }
+   -   }
 
 
 
