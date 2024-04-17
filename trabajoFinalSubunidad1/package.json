@@ -1,10 +1,12 @@
 {
   "name": "trabajofinalsubunidad1",
   "version": "1.0.0",
-  "description": "<!-- Centrar el título -->\r <h1 align=\"center\">Guía para realizar Entrega Final Diplomado en Desarrollo web 2024</h1>",
+  "description": "Entrega final",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Luisa castaño",
   "license": "ISC",
