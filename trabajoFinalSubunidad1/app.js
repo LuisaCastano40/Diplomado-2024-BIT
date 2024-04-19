@@ -3,7 +3,8 @@
 import express from 'express';
 // Importamos path para usar ciertas utilidades a la hora de trabajar con rutas
 import path from 'path';
-
+import dotenv from "dotenv";
+import usuarioRouter from './src/routes/user.routes.js';
 import conexionMongo from './src/config/db.js';
 
 //configuramos express como servidor
@@ -12,7 +13,7 @@ const app = express();
 const port = 3000; 
 
 // configuramos el uso de dotenv -> para usar variables de estado
-import dotenv from "dotenv";
+
 dotenv.config();
 
 //  ejecutamos la función de conexión de nuestra base de datos
@@ -27,7 +28,7 @@ const publicPath = path.join(process.cwd(), 'public');
 app.use(express.static(publicPath));
 // middleware para cuando esperas recibir datos en formato JSON
 app.use(express.json());
-
+app.use('/api', usuarioRouter);
 
 
 
