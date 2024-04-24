@@ -5,12 +5,28 @@ GET http://localhost:3000/api//obtenerusuario
 
 ### Crear producto
 POST http://localhost:3000/api/crearUsuario
+
 Content-Type: application/json
+
+{
+    "nombreCompleto": "Juan Pérez2",
+    "correo": "juan@example.com",
+    "contrasena": "clave123"
+}
+
+
+
 
 ### Actualizar un usuario por ID
-PUT http://localhost:3000/api//actualizarUsuario/:_id
+PUT http://localhost:3000/api//actualizarUsuario/66296f902eceaafec1769e87
+
 Content-Type: application/json
 
+{
+    "nombreCompleto": "Juan Pérez",
+    "correo": "juan@example.com",
+    "contrasena": "clave123"
+}
 
 ### Eliminar un usuario por ID
-DELETE http://localhost:3000/api/eliminarUsuario/:_id
+DELETE http://localhost:3000/api/eliminarUsuario/66296f902eceaafec1769e87

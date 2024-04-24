@@ -28,6 +28,7 @@ const publicPath = path.join(process.cwd(), 'public');
 app.use(express.static(publicPath));
 // middleware para cuando esperas recibir datos en formato JSON
 app.use(express.json());
+
 app.use('/api', usuarioRouter);
 
 
