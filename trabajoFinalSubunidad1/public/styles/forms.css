@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+}
+
+.body > * {
+    width: 100%;
+}
+
+main{
+    margin: 45px 0px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+@media (max-width: 576px) {
+    .container {
+      max-width: 90%; /* Puedes ajustar este valor según tus necesidades */
+    }
+  }
